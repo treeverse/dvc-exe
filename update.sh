@@ -8,7 +8,7 @@ if [ ! $LATEST ]; then
   LATEST=$(./latest.sh)
 fi
 
-PROJECT="iterative/dvc"
+PROJECT="treeverse/dvc"
 GHAPI_URL="https://api.github.com/repos/$PROJECT/releases/latest"
 LATEST=$(curl --silent $GHAPI_URL | jq -r .tag_name)
 

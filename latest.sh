@@ -2,6 +2,6 @@
 
 set -e
 
-PROJECT="iterative/dvc"
+PROJECT="treeverse/dvc"
 GHAPI_URL="https://api.github.com/repos/$PROJECT/releases/latest"
 echo $(curl --silent $GHAPI_URL | jq -r .tag_name)
