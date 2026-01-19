@@ -41,7 +41,7 @@ jobs:
         client-id: ${{ vars.MICROSOFT_AZURE_CLIENT }}
         tenant-id: ${{ vars.MICROSOFT_AZURE_TENANT }}
         subscription-id: ${{ vars.MICROSOFT_AZURE_SUBSCRIPTION }}
-    - uses: azure/trusted-signing-action@v0
+    - uses: azure/trusted-signing-action@v1
       with:
         endpoint: https://eus.codesigning.azure.net/
         trusted-signing-account-name: iterative
