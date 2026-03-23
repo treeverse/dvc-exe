@@ -36,7 +36,7 @@ jobs:
       run: dvc pull
     - name: Build package
       run: python build.py
-    - uses: azure/login@v2
+    - uses: azure/login@v3
       with:
         client-id: ${{ vars.MICROSOFT_AZURE_CLIENT }}
         tenant-id: ${{ vars.MICROSOFT_AZURE_TENANT }}
